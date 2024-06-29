@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+.content span,
+.head b,
+.article span {
+  color: #a88c31;
+}
+.navbar-toggler {
+  padding: 0;
+  font-size: 35px;
+  color: #fff;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.header {
+  height: 403px;
+  background-color: #f2f2f2;
+}
+.headerImage {
+  width: 422px;
+  height: 422px;
+  background-image: url("../../images/ebtihal.webp");
+  background-position: 50% 50%;
+  margin: -343px auto 0;
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+  stroke: #ffffff;
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* Center to sections */
+section {
+  justify-content: center;
+  text-align: center;
+  /* margin-bottom: 50px; */
+}
+/* Head Section */
+.head {
+  margin-bottom: 50px;
+}
+.head h2 {
+  /* text-transform: uppercase; */
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-size: 3rem;
+  width: 554px;
+  margin: 60px auto 0;
+}
+.head b {
+  font-weight: bold;
+}
+.head p {
+  width: 543px;
+  margin: 20px auto 0;
+}
+.head a {
+  border-style: none none solid;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-width: 0;
+  color: #a88c31 !important;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+/* content */
+.content .sectionOne .imageOne {
+  height: 590px;
+  margin-top: 63px;
+  width: 100%;
+}
+.content .sectionOne h2 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+.content .sectionOne h2 span,
+.communication .commContentTop span {
+  font-weight: 700;
+}
+.content .sectionTwo .imageTwo {
+  height: 590px;
+  width: 100%;
+}
+.sectionTwo p {
+  margin: 45px 18px 0 0;
+}
+.sectionTwo .readMoreSec {
+  border: 2px solid #a88c31;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin: 35px auto 0 0;
+  padding: 10px 46px 10px 45px;
+  color: #a88c31;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* article */
+.article .artcHead {
+  position: relative;
+  flex: 1;
+  max-width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+.article .artcHead h1 {
+  font-size: 4.125rem;
+  font-weight: 300;
+  margin: 20px 0 0;
+  line-height: 1.1;
+}
+.article .artContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 164px 30px 30px;
+}
+.article .artContent p {
+  margin: 120px 0 0;
+}
+.article .artContent a,
+.gallerySection .readMore,
+.communication .commContentTop a {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 20px 0 0;
+  color: #ffffff !important;
+  background-color: #a88c31 !important;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 30px;
+  align-self: flex-start;
+}
+
+/* about */
+.about .aboutBorder {
+  height: 6px;
+  transform-origin: left center;
+  width: auto;
+  margin: 60px auto 0;
+  border: 8px solid #454545;
+  stroke: #454545;
+}
+.about p {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.6;
+  margin: 46px 229px 0;
+}
+
+/* gallery aarrow */
+.galleryarr {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleryarr span {
+  width: 5px;
+  height: 22px;
+  border-radius: 5px;
+  margin: 4px;
+  background-color: #000;
+  animation: move 1.5s infinite ease-in-out;
+}
+.galleryarr span:nth-of-type(1) {
+  transform: rotate(-45deg);
+}
+.galleryarr span:nth-of-type(2) {
+  transform: rotate(45deg);
+}
+
+@keyframes move {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 100px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* gallerySection */
+.gallerySection .gallery {
+  /* height: 1166px; */
+  margin-top: 60px;
+  margin-bottom: 0;
+  grid-gap: 17px;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.gallerySection .gallery-item {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(21, 21, 21, 0.6);
+  margin-bottom: 5px;
+}
+.gallerySection .back-side {
+  height: 237px;
+}
+.gallerySection .gallery-item .back-side .galleryImage {
+  max-width: 100%;
+  height: auto;
+  transition: all ease-in-out 0.3s;
+}
+.gallerySection .gallery .overSide {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+.gallery-item:hover .overSide {
+  content: "";
+  background: rgb(38 36 36 / 60%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+.gallery-item:hover .galleryImage {
+  transform: scale(1.2);
+}
+.gallery-item:hover .overSide {
+  opacity: 1;
+}
+.gallerySection .gallery .overSide h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+.gallerySection .gallery .overSide p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+.gallerySection .imgLink {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.portfolio {
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  display: flex;
+  padding: 23px;
+}
+
+/* communication */
+.communication {
+  margin-top: 100px;
+}
+
+.communication .commContentTop h1 {
+  font-weight: 300;
+  line-height: 1.1;
+}
+.communication .commContentTop p {
+  margin-top: 30px;
+}
+
+.communication .commContentBottom {
+  padding-top: 240px;
+}
+
+@media screen and (max-width: 576px) {
+  .head h2,
+  .head p {
+    width: 370px;
+  }
+  .headerImage {
+    width: 330px;
+    height: 330px;
+    margin: -248px auto 0;
+  }
+  .content .sectionOne h2 {
+    font-size: 3.5rem;
+  }
+  .content .sectionOne {
+    margin-bottom: 10px;
+  }
+  .article .artContent {
+    padding: 30px;
+  }
+  .article .artContent p {
+    margin: 0;
+  }
+  .article .artcHead h1 {
+    font-size: 4.125rem;
+  }
+  .about p {
+    margin: 20px 0 0 0;
+  }
+  /* gallerySection */
+  .gallerySection .gallery {
+    margin-top: 40px;
+  }
+  .gallerySection .gallery-item {
+    margin-bottom: 5px;
+  }
+  .content .sectionTwo .imageTwo,
+  .content .sectionOne .imageOne {
+    height: 480px;
+  }
+  .galleryarr {
+    height: 18vh;
+  }
+  .communication .commContentBottom {
+    padding-top: 80px;
+  }
+}

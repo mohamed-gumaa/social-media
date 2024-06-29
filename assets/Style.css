@@ -1,0 +1,23 @@
+/* #a88c31 */
+* {
+  --jp-text-size: 2.5;
+  --jp-alignment: center;
+}
+.header {
+  background-color: #f7f4f2;
+  text-align: center;
+}
+.header img {
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+}
+.header h2 {
+  font-size: calc(1rem * var(--jp-text-size));
+  color: #58552c;
+}
+.header h2,
+.header p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
